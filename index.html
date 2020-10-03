@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Your Day</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>COVID Simulator</h1>
+
+    <table align="center" style="width:100%">
+      <tr>
+        <td>
+          <center>
+            <form>
+              <label autofocus for="fname">First Name:</label><br />
+              <input type="text" id="fname" name="fname" /><br />
+            </form>
+          </center>
+        </td>
+        <td>
+          <p>
+            Welcome to the COVID simulator. Type in your name and click on the
+           character to start.
+          </p>
+        </td>
+        <td>
+        <center>
+            <a href="step1.html">
+              <img
+                width="130"
+                height="200"
+                id="chooseChar3"
+                src="https://cdn.glitch.com/e1a465c0-e304-4bd3-a118-d740ea16038c%2FIMG_0048.jpg?v=1601756806196"
+              />
+            </a>
+          </center>
+        </td>
+      </tr>
+      
+    </table>
+
+    <script>
+      function getName() {
+        name = document.getElementById("fname").value;
+      }
+
+      var char1 = document.getElementById("chooseChar3);
+      char3.addEventListener("click", getName);
+    </script>
+  </body>
+</html>
