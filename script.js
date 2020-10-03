@@ -28,7 +28,7 @@ function click() {
 }
 
 function calculate() {
-  if (Math.random() > 0.4) covid = false;
+  if (Math.random() > 0.5) covid = false;
   else covid = true;
   peopleInfected = Math.floor(Math.random()*200);
   for (var i = 0; i < arr.length; i++) {
