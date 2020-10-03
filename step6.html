@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>COVID Simulator</h1>
+
+    <table style="width:100%">
+      <tr>
+        <td>
+          <img width = "500" height = "300" src="https://cdn.glitch.com/e1a465c0-e304-4bd3-a118-d740ea16038c%2FUntitled%206.png?v=1601756343778">
+        </td>
+        <td>
+          <p>
+            At a restaurant, do you dine in or get take out?
+          </p>
+        </td>
+        <td>
+          <center>
+            <p>
+              <a href="step7.html">
+                <button id = "button1" class="buttonT" onclick="click(1)">
+                  Dine in
+                </button>
+              </a>
+            </p>
+            <p>
+              <a href="step7.html">
+                <button id = "button2" class="buttonF" onclick="click(2)">
+                  Take out
+                </button>
+              </a>
+            </p>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <script>
+      var button1 = document.getElementById("button1");
+      var button2 = document.getElementById("button2");
+      button1.addEventListener("click", function() {
+        arr.push(1);
+      });
+      button2.addEventListener("click", function() {
+        arr.push(2);
+      });
+    </script>
+  </body>
+</html>

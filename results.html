@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>COVID Simulator</h1>
+
+    <p>
+      <button id = "resultButton" class="buttonT" onclick="calculate()">
+        Click here to see if you contracted COVID.
+      </button>
+      <a href = "index.html" id = "newButton" ></a>
+    </p>
+    <p id="covid"></p>
+    <p id = "infected"></p>
+    <image id = "im" src = ""></image>
+    <script>
+      function covidResults() {
+        var myDiv = document.getElementById("newButton");
+        var restartButton = document.createElement("BUTTON");
+        var text = document.createTextNode("Play Again");
+        restartButton.appendChild(text);
+        myDiv.appendChild(restartButton);
+        document.getElementById("newButton").href = "index.html";
+        var covidElement = document.getElementById("covid");
+        var infectedElement = document.getElementById("infected");
+        if (covid) {
+          covidElement.innerHTML = "You tested POSITIVE for COVID.";
+          infectedElement.innerHTML = "You infected " + peopleInfected + " people";
+          document.getElementById("im").src = "https://cdn.glitch.com/e1a465c0-e304-4bd3-a118-d740ea16038c%2FIMG_0043.jpg?v=1601756805126";
+        } 
+        else {
+          covidElement.innerHTML = "You tested NEGATIVE for COVID.";
+          document.getElementById("im").src = "https://cdn.glitch.com/e1a465c0-e304-4bd3-a118-d740ea16038c%2FUntitled.png?v=1601756345102";
+        }
+      }
+        var button = document.getElementById("resultButton")
+        button.addEventListener("click", covidResults);
+    </script>
+  </body>
+</html>
